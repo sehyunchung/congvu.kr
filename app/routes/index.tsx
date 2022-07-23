@@ -34,6 +34,9 @@ export default function Index() {
           </A>
         </li>
       </ul>
+      <div>
+        <img src="" />
+      </div>
     </div>
   );
 }
