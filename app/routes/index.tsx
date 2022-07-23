@@ -1,30 +1,37 @@
+import { A } from '~/components/A';
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h1>Welcome to Remix</h1>
+    <div className="container p-4">
+      <h1 className="text-xl font-bold">CONG VU</h1>
+      <div className="h-2" />
       <ul>
         <li>
-          <a
+          <A
             target="_blank"
-            href="https://remix.run/tutorials/blog"
+            href="https://soundcloud.com/cong_vu"
             rel="noreferrer"
           >
-            15m Quickstart Blog Tutorial
-          </a>
+            soundcloud
+          </A>
         </li>
         <li>
-          <a
+          <A
             target="_blank"
-            href="https://remix.run/tutorials/jokes"
+            href="https://instagram.com/cong_vu"
             rel="noreferrer"
           >
-            Deep Dive Jokes App Tutorial
-          </a>
+            instagram
+          </A>
         </li>
         <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
+          <A
+            target="_blank"
+            href="https://www.youtube.com/channel/UCJE2B7eU86iLhk6p467XcJQ"
+            rel="noreferrer"
+          >
+            youtube
+          </A>
         </li>
       </ul>
     </div>
