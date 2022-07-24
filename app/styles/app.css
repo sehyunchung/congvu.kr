@@ -589,20 +589,12 @@ video {
   height: 0.5rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
+.font-serif {
+  font-family: Libre Caslon Display, serif;
 }
 
 .text-xl {

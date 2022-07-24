@@ -11,7 +11,22 @@ import type { MetaFunction } from '@remix-run/node';
 import styles from './styles/app.css';
 
 export function links() {
-  return [{ rel: 'stylesheet', href: styles }];
+  return [
+    { rel: 'stylesheet', href: styles },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com',
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossorigin: true,
+    },
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap',
+      rel: 'stylesheet',
+    },
+  ];
 }
 
 export const meta: MetaFunction = () => {
