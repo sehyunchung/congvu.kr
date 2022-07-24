@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: ["Libre Caslon Display", "serif"],
-        comic: ["Comic Sans MS", "sans-serif"],
+        comic: ["Comic Sans MS", "Comic Sans", "cursive"],
       },
     },
   },
