@@ -1,4 +1,4 @@
-import { A } from '~/components/A';
+import { Anchor } from "~/components/Anchor";
 
 export default function Index() {
   return (
@@ -7,31 +7,31 @@ export default function Index() {
       <div className="h-2" />
       <ul>
         <li>
-          <A
+          <Anchor
             target="_blank"
             href="https://soundcloud.com/cong_vu"
             rel="noreferrer"
           >
             soundcloud
-          </A>
+          </Anchor>
         </li>
         <li>
-          <A
+          <Anchor
             target="_blank"
             href="https://instagram.com/cong_vu"
             rel="noreferrer"
           >
             instagram
-          </A>
+          </Anchor>
         </li>
         <li>
-          <A
+          <Anchor
             target="_blank"
             href="https://www.youtube.com/channel/UCJE2B7eU86iLhk6p467XcJQ"
             rel="noreferrer"
           >
             youtube
-          </A>
+          </Anchor>
         </li>
       </ul>
       <div>
