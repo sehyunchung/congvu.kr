@@ -2,10 +2,10 @@ import { Anchor } from "~/components/Anchor";
 
 export default function Index() {
   return (
-    <div className="container p-4">
-      <h1 className="text-xl font-bold">CONG VU</h1>
+    <div className="container p-4 font-serif text-lg">
+      <h1 className="text-3xl font-bold">CONG VU</h1>
       <div className="h-2" />
-      <ul>
+      <ul className="flex gap-4">
         <li>
           <Anchor
             target="_blank"

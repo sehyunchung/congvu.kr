@@ -585,8 +585,20 @@ video {
   }
 }
 
+.flex {
+  display: flex;
+}
+
 .h-2 {
   height: 0.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .p-4 {
@@ -597,8 +609,23 @@ video {
   font-family: Libre Caslon Display, serif;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
