@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "remix-app-template",
-  "description": "",
+  "name": "congvu.kr",
+  "description": "Official website of CONG VU",
   "license": "",
   "scripts": {
     "build": "npm run build:css && remix build",
