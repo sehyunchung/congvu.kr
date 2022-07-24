@@ -9,6 +9,15 @@ export default function Index() {
         <li>
           <Anchor
             target="_blank"
+            href="mailto:info.congvu@gmail.com"
+            rel="noreferrer"
+          >
+            mail
+          </Anchor>
+        </li>
+        <li>
+          <Anchor
+            target="_blank"
             href="https://soundcloud.com/cong_vu"
             rel="noreferrer"
           >
