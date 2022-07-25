@@ -30,7 +30,7 @@ export function links() {
 }
 
 export const meta: MetaFunction = () => {
-  return { title: 'CONG VU' };
+  return { title: 'Cong Vu' };
 };
 
 export default function App() {
