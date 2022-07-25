@@ -22,11 +22,8 @@ export default function Index() {
           Cong Vu
         </h1>
         <div className="h-8" />
-        <ul
-          className="flex gap-4 flex-wrap justify-center"
-          aria-label="links"
-        >
-          <li aria-label="mail">
+        <ul className="flex gap-4 flex-wrap justify-center" aria-label="links">
+          <li aria-label="mail link">
             <BorderedAnchor
               className="bg-gradient-to-r from-sky-500/75 to-indigo-500/75"
               target="_blank"
@@ -36,7 +33,7 @@ export default function Index() {
               mail
             </BorderedAnchor>
           </li>
-          <li aria-label="soundcloud">
+          <li aria-label="soundcloud link">
             <BorderedAnchor
               className="bg-gradient-to-r from-orange-400/75 to-red-500/75"
               target="_blank"
@@ -46,7 +43,7 @@ export default function Index() {
               soundcloud
             </BorderedAnchor>
           </li>
-          <li aria-label="instagram">
+          <li aria-label="instagram link">
             <BorderedAnchor
               className="bg-gradient-to-r from-pink-600/75 to-amber-800/75"
               target="_blank"
@@ -56,7 +53,7 @@ export default function Index() {
               instagram
             </BorderedAnchor>
           </li>
-          <li aria-label="youtube">
+          <li aria-label="youtube link">
             <BorderedAnchor
               className="bg-gradient-to-r from-red-500/75 to-red-800/75"
               target="_blank"
