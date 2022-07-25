@@ -619,6 +619,42 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-sky-500\/50 {
+  --tw-gradient-from: rgb(14 165 233 / 0.5);
+  --tw-gradient-to: rgb(14 165 233 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-sky-500\/5 {
+  --tw-gradient-from: rgb(14 165 233 / 0.05);
+  --tw-gradient-to: rgb(14 165 233 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-sky-500\/75 {
+  --tw-gradient-from: rgb(14 165 233 / 0.75);
+  --tw-gradient-to: rgb(14 165 233 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-orange-400\/75 {
+  --tw-gradient-from: rgb(251 146 60 / 0.75);
+  --tw-gradient-to: rgb(251 146 60 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-pink-600\/75 {
+  --tw-gradient-from: rgb(219 39 119 / 0.75);
+  --tw-gradient-to: rgb(219 39 119 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-red-500\/75 {
+  --tw-gradient-from: rgb(239 68 68 / 0.75);
+  --tw-gradient-to: rgb(239 68 68 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-indigo-500 {
   --tw-gradient-to: #6366f1;
 }
@@ -633,6 +669,26 @@ video {
 
 .to-red-800 {
   --tw-gradient-to: #991b1b;
+}
+
+.to-indigo-500\/50 {
+  --tw-gradient-to: rgb(99 102 241 / 0.5);
+}
+
+.to-indigo-500\/75 {
+  --tw-gradient-to: rgb(99 102 241 / 0.75);
+}
+
+.to-red-500\/75 {
+  --tw-gradient-to: rgb(239 68 68 / 0.75);
+}
+
+.to-amber-800\/75 {
+  --tw-gradient-to: rgb(146 64 14 / 0.75);
+}
+
+.to-red-800\/75 {
+  --tw-gradient-to: rgb(153 27 27 / 0.75);
 }
 
 .p-4 {
@@ -657,12 +713,12 @@ video {
   vertical-align: middle;
 }
 
-.font-serif {
-  font-family: Libre Caslon Display, serif;
+.font-comic {
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
-.font-comic {
-  font-family: Comic Sans MS, sans-serif;
+.font-serif {
+  font-family: Libre Caslon Display, serif;
 }
 
 .text-lg {
@@ -670,14 +726,13 @@ video {
   line-height: 1.75rem;
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-white {
@@ -688,6 +743,14 @@ video {
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .hover\:underline:hover {

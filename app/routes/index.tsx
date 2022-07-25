@@ -25,7 +25,7 @@ export default function Index() {
         <ul className="flex gap-4 flex-wrap justify-center">
           <li>
             <BorderedAnchor
-              className="bg-gradient-to-r from-sky-500 to-indigo-500"
+              className="bg-gradient-to-r from-sky-500/75 to-indigo-500/75"
               target="_blank"
               href="mailto:info.congvu@gmail.com"
               rel="noreferrer"
@@ -35,7 +35,7 @@ export default function Index() {
           </li>
           <li>
             <BorderedAnchor
-              className="bg-gradient-to-r from-orange-400 to-red-500"
+              className="bg-gradient-to-r from-orange-400/75 to-red-500/75"
               target="_blank"
               href="https://soundcloud.com/cong_vu"
               rel="noreferrer"
@@ -45,7 +45,7 @@ export default function Index() {
           </li>
           <li>
             <BorderedAnchor
-              className="bg-gradient-to-r from-pink-600 to-amber-800"
+              className="bg-gradient-to-r from-pink-600/75 to-amber-800/75"
               target="_blank"
               href="https://instagram.com/cong_vu"
               rel="noreferrer"
@@ -55,7 +55,7 @@ export default function Index() {
           </li>
           <li>
             <BorderedAnchor
-              className="bg-gradient-to-r from-red-500 to-red-800"
+              className="bg-gradient-to-r from-red-500/75 to-red-800/75"
               target="_blank"
               href="https://www.youtube.com/channel/UCJE2B7eU86iLhk6p467XcJQ"
               rel="noreferrer"
