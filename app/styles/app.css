@@ -551,8 +551,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .flex {
@@ -565,6 +577,10 @@ video {
 
 .h-8 {
   height: 2rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .flex-col {
@@ -633,10 +649,6 @@ video {
 
 .to-red-800\/75 {
   --tw-gradient-to: rgb(153 27 27 / 0.75);
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .py-2 {
