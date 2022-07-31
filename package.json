@@ -21,7 +21,8 @@
     "react-dom": "^18.2.0",
     "remix-three": "^0.0.1",
     "three": "^0.142.0",
-    "valtio": "^1.6.3"
+    "valtio": "^1.6.3",
+    "@remix-run/vercel": "1.6.1"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.5.1",
