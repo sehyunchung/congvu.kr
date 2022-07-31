@@ -24,7 +24,7 @@ export default function Index() {
         <ul className="flex gap-4 flex-wrap justify-center" aria-label="links">
           <li aria-label="mail link">
             <BorderedAnchor
-              className="bg-gradient-to-r from-sky-500/75 to-indigo-500/75"
+              className="border border-sky-500 text-sky-500"
               target="_blank"
               href="mailto:info.congvu@gmail.com"
               rel="noreferrer"
@@ -34,7 +34,7 @@ export default function Index() {
           </li>
           <li aria-label="soundcloud link">
             <BorderedAnchor
-              className="bg-gradient-to-r from-orange-400/75 to-red-500/75"
+              className="border border-red-500 text-red-500"
               target="_blank"
               href="https://soundcloud.com/cong_vu"
               rel="noreferrer"
@@ -44,7 +44,7 @@ export default function Index() {
           </li>
           <li aria-label="instagram link">
             <BorderedAnchor
-              className="bg-gradient-to-r from-pink-600/75 to-amber-800/75"
+              className="border border-orange-500 text-orange-500"
               target="_blank"
               href="https://instagram.com/cong_vu"
               rel="noreferrer"
@@ -54,7 +54,7 @@ export default function Index() {
           </li>
           <li aria-label="youtube link">
             <BorderedAnchor
-              className="bg-gradient-to-r from-red-500/75 to-red-800/75"
+              className="border border-red-500 text-red-500"
               target="_blank"
               href="https://www.youtube.com/channel/UCJE2B7eU86iLhk6p467XcJQ"
               rel="noreferrer"
