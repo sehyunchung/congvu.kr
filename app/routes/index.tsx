@@ -17,7 +17,7 @@ export default function Index() {
   return (
     <div className="antialiased h-screen w-screen flex flex-col justify-center items-center font-comic text-lg">
       <div className="absolute z-10">
-        <h1 className="relative font-serif text-9xl text-white text-center pointer-events-none">
+        <h1 className="relative font-serif text-9xl text-white text-center pointer-events-none select-none">
           Cong Vu
         </h1>
         <div className="h-8" />
