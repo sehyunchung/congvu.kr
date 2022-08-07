@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./app/**/*.{js,ts,jsx,tsx}'],
+  content: ["./app/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Libre Caslon Display', 'serif'],
+        serif: ["Libre Caslon Display", "serif"],
+        comic: ["Comic Sans MS", "Comic Sans", "cursive"],
       },
     },
   },
