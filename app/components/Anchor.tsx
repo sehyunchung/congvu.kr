@@ -17,7 +17,7 @@ export function BorderedAnchor({
 }: React.ComponentProps<"a">): React.ReactElement {
   return (
     <a
-      className={`flex justify-center align-middle rounded-3xl py-2 px-5 text-sm hover:underline select-none ${className}`}
+      className={`flex justify-center align-middle py-1 px-3 text-md hover:underline select-none ${className}`}
       {...props}
     >
       {children}

@@ -15,7 +15,7 @@ export const links: LinksFunction = () => {
 
 export default function Index() {
   return (
-    <div className="antialiased h-screen w-screen flex flex-col justify-center items-center font-comic text-lg">
+    <div className="h-screen w-screen flex flex-col justify-center items-center font-serif text-lg">
       <div className="absolute z-10">
         <h1 className="relative font-serif text-9xl text-white text-center pointer-events-none select-none">
           Cong Vu
@@ -24,7 +24,7 @@ export default function Index() {
         <ul className="flex gap-4 flex-wrap justify-center" aria-label="links">
           <li aria-label="mail link">
             <BorderedAnchor
-              className="border border-sky-500 text-sky-500"
+              className="text-sky-400"
               target="_blank"
               href="mailto:info.congvu@gmail.com"
               rel="noreferrer"
@@ -34,7 +34,7 @@ export default function Index() {
           </li>
           <li aria-label="soundcloud link">
             <BorderedAnchor
-              className="border border-red-500 text-red-500"
+              className="text-red-400"
               target="_blank"
               href="https://soundcloud.com/cong_vu"
               rel="noreferrer"
@@ -44,7 +44,7 @@ export default function Index() {
           </li>
           <li aria-label="instagram link">
             <BorderedAnchor
-              className="border border-orange-500 text-orange-500"
+              className="text-orange-400"
               target="_blank"
               href="https://instagram.com/cong_vu"
               rel="noreferrer"
@@ -54,7 +54,7 @@ export default function Index() {
           </li>
           <li aria-label="youtube link">
             <BorderedAnchor
-              className="border border-red-500 text-red-500"
+              className="text-red-400"
               target="_blank"
               href="https://www.youtube.com/channel/UCJE2B7eU86iLhk6p467XcJQ"
               rel="noreferrer"
