@@ -1,34 +1,27 @@
 {
+  "name": "cv-n13",
+  "version": "0.1.0",
   "private": true,
-  "name": "congvu.kr",
-  "description": "Official website of CONG VU",
-  "license": "",
   "scripts": {
-    "build": "npm run build:css && remix build",
-    "build:css": "tailwindcss -m -i ./styles/app.css -o ./app/styles/app.css",
-    "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
-    "dev:css": "tailwindcss -w -i ./styles/app.css -o ./app/styles/app.css"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@remix-run/node": "^1.5.1",
-    "@remix-run/react": "^1.5.1",
-    "@remix-run/serve": "^1.5.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@types/node": "18.15.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.5.1",
-    "@types/react": "^17.0.24",
-    "@types/react-dom": "^17.0.9",
-    "autoprefixer": "^10.4.7",
-    "concurrently": "^7.3.0",
-    "cross-env": "^7.0.3",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.6",
-    "typescript": "^4.1.2"
-  },
-  "engines": {
-    "node": ">=14"
-  },
-  "sideEffects": false
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  }
 }
