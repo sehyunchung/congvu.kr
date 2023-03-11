@@ -1,5 +1,7 @@
 import "./globals.css";
 
+import "@fontsource/gothic-a1";
+
 export const metadata = {
   title: "Cong Vu",
   description: "Hi",
