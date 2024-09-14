@@ -1,7 +1,7 @@
 {
   "tasks": {
     "build": "deno run -A npm:@remix-run/dev@^2.11.2 vite:build",
-    "deploy": "deployctl deploy --prod --include=deno.jsonc,deno.lock,build,server --project=<your deno deploy project> ./server.production.ts",
+    "deploy": "deployctl deploy --prod --include=deno.jsonc,build,server --project=congvu ./server.production.ts",
     "dev": "deno run -A npm:@remix-run/dev@^2.11.2 vite:dev",
     "lint": "deno lint && deno run -A npm:eslint@^8.57.0 --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "deno serve -A --parallel ./server.production.ts",
@@ -12,7 +12,7 @@
     "app/",
     "build/"
   ],
-  "nodeModulesDir": true,
+  "nodeModulesDir": "auto",
   "imports": {
     "@remix-run/dev": "npm:@remix-run/dev@^2.11.2",
     "@remix-run/express": "npm:@remix-run/express@^2.11.2",
@@ -42,5 +42,18 @@
     "typescript": "npm:typescript@^5.5.4",
     "vite": "npm:vite@^5.4.2",
     "vite-tsconfig-paths": "npm:vite-tsconfig-paths@^5.0.1"
+  },
+  "lock": true,
+  "deploy": {
+    "project": "da129ee7-ce4b-4c49-9a50-b0dfdd29b88a",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [
+      "deno.jsonc",
+      "build",
+      "server"
+    ],
+    "entrypoint": "server.production.ts"
   }
 }
