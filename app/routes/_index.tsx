@@ -1,57 +1,29 @@
-import { useLoaderData, type MetaFunction } from "@remix-run/react";
-
-export const loader = () => {
-  return { denoVersion: Deno.version };
-};
+import {  type MetaFunction } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix on Deno!" },
-  ];
+  return [{ title: "CONG VU" }, { name: "description", content: "Hello" }];
 };
 
-export default function Index() {
-  const { denoVersion } = useLoaderData<typeof loader>();
+const LINKS = [
+  { name: "SoundCloud", href: "https://soundcloud.com/cong_vu" },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/cong_vu",
+  }
+];
 
+export default function Index() {
   return (
-    <div className="font-sans p-4">
-      <h1 className="text-3xl">
-        Welcome to Remix on Deno{" "}
-        {denoVersion.deno ? `v${denoVersion.deno}` : "Deploy"}
-      </h1>
-      <ul className="list-disc mt-4 pl-6 space-y-2">
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/quickstart"
-            rel="noreferrer"
-          >
-            5m Quick Start
-          </a>
+    <div className="font-sans p-4 grid place-items-center">
+      <h1 className="text-3xl">CONG VU</h1>
+      <ul>
+      {LINKS.map((link) => (
+        <li key={link.name}>
+          <a href={link.href}>{link.name}</a>
         </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/tutorial"
-            rel="noreferrer"
-          >
-            30m Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/docs"
-            rel="noreferrer"
-          >
-            Remix Docs
-          </a>
-        </li>
+      ))}
       </ul>
+      
     </div>
   );
 }
