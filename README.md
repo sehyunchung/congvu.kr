@@ -7,9 +7,9 @@ Node.js, only [Deno](https://deno.com/).
 
 This template has been tested with Deno v1.46.1.
 
-Live deployment: https://huge-badger-89.deno.dev/
+Live deployment: <https://huge-badger-89.deno.dev/>
 
-# Remix + Deno
+## Remix + Deno
 
 Welcome to the Deno template for Remix! 🦕
 
@@ -18,25 +18,33 @@ For more, check out the [Remix docs](https://remix.run/docs).
 ## Managing dependencies
 
 - ✅ You should use `deno add` to add packages
+
   ```sh
   deno add npm:react
   ```
+
   ```ts
   import { useState } from "react";
   ```
+
 - ✅ You may use inlined URL imports, JSR imports or NPM imports for Deno
   modules.
+
   ```ts
   import { copy } from "https://deno.land/std@0.138.0/streams/conversion.ts";
   ```
+
 - ✅ You may use Deno and Node built-ins for both Deno modules and server-only
   Remix code.
+
   ```ts filename=app/entry.server.tsx
   Deno.env.get("DENO_DEPLOYMENT_ID");
   ```
+
   ```ts filename=app/entry.server.tsx
   import fs from "node:fs";
   ```
+
 - ✅ You may use
   [import maps](https://docs.deno.com/runtime/manual/basics/import_maps) for
   Deno modules.
@@ -79,9 +87,9 @@ deploying to [Deno Deploy](https://deno.com/deploy).
 
 1. [Sign up](https://dash.deno.com/signin) for Deno Deploy.
 
-2. [Create a new Deno Deploy project](https://dash.deno.com/new) for this app.
+1. [Create a new Deno Deploy project](https://dash.deno.com/new) for this app.
 
-3. Replace `<your deno deploy project>` in the `deploy` script in `package.json`
+1. Replace `<your deno deploy project>` in the `deploy` script in `package.json`
    with your Deno Deploy project name:
 
 ```json filename=package.json
@@ -92,7 +100,7 @@ deploying to [Deno Deploy](https://deno.com/deploy).
 }
 ```
 
-4. [Create a personal access token](https://dash.deno.com/account) for the Deno
+1. [Create a personal access token](https://dash.deno.com/account) for the Deno
    Deploy API and export it as `DENO_DEPLOY_TOKEN`:
 
 ```sh
@@ -104,14 +112,14 @@ it available for new terminal sessions, but make sure you don't commit this
 token into `git`. If you want to use this token in GitHub Actions, set it as a
 GitHub secret.
 
-5. Install the Deno Deploy CLI,
+1. Install the Deno Deploy CLI,
    [`deployctl`](https://github.com/denoland/deployctl):
 
 ```sh
 deno install -Arf jsr:@deno/deployctl
 ```
 
-6. If you have previously installed the Deno Deploy CLI, you should update it to
+1. If you have previously installed the Deno Deploy CLI, you should update it to
    the latest version:
 
 ```sh
