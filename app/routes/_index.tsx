@@ -83,17 +83,25 @@ const WORKS = [
     href: "https://soundcloud.com/cong_vu/cv-taepyongso-69?si=ab942bae161542588e431ab3b2619d70&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
   },
   {
-    name: "Midnite",
-    href: "https://soundcloud.com/cong_vu/cong-vu-cong-vu-cdr-ii-07-midnite?si=0057765f713b482498c448eda278c45b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-  },
-  {
-    name: "SES 999",
-    href: "https://soundcloud.com/cong_vu/ses-999?si=f8c899340a33415eb178e662da2354cb&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-  },
-  {
     name: "160 YS",
     href: "https://jukeunderground.bandcamp.com/track/160-ys-cong-vu",
   },
+  {
+    name: "Vin Soni",
+    href: "https://jukeunderground.bandcamp.com/track/vin-soni-cong-vu",
+  },
+  {
+    name: "第3TEK",
+    href: "https://congvu.bandcamp.com/track/3tek"
+  },
+  {
+    name: "Midnite",
+    href: "https://soundcloud.com/cong_vu/cong-vu-cong-vu-cdr-ii-07-midnite?si=0057765f713b482498c448eda278c45b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+  },
+  // {
+  //   name: "SES 999",
+  //   href: "https://soundcloud.com/cong_vu/ses-999?si=f8c899340a33415eb178e662da2354cb&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+  // },
 ];
 
 export default function Index() {
