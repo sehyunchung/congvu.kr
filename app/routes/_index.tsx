@@ -104,13 +104,34 @@ const WORKS = [
   // },
 ];
 
+const MIXES = [
+  {
+    name: "BOTTOM BASS 바텀베이스 🍑 🍆 | CLUB, VOGUE, TRANCE(?) | SCR LIVE 2024.10.09",
+    href: "https://www.youtube.com/live/u0eX8hh3YcQ?si=HDJmhbYWKgVH0cPo",
+  },
+];
+
 export default function Index() {
   return (
     <div className="p-4 grid grid-cols-8 lg:grid-cols-24 row-auto col-auto h-dvh font-mono">
       <h1 className="text-4xl col-start-1 mt-12 h-min col-span-full text-center">
         CONG VU
       </h1>
-      <article className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid">
+      <section className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid mt-12">
+        <h2 className="col-span-full">Latest Mixes</h2>
+        {MIXES.map((mix) => (
+          <a
+            href={mix.href}
+            key={mix.href}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-md text-center col-span-full border-[1px] hover:shadow-md transition-all py-4 border-gray-500 "
+          >
+            {mix.name}
+          </a>
+        ))}
+      </section>
+      <section className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid">
         <h2>Tracks</h2>
         {WORKS.map((work) => (
           <a
@@ -125,7 +146,8 @@ export default function Index() {
             </button>
           </a>
         ))}
-      </article>
+      </section>
+      <section className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid">
       <ul className="flex justify-center items-center text-2xl py-4 h-min gap-4 col-start-1 col-span-full">
         {LINKS.map((link) => (
           <li
@@ -143,6 +165,7 @@ export default function Index() {
           </li>
         ))}
       </ul>
+      </section>
     </div>
   );
 }
