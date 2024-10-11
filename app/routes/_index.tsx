@@ -78,22 +78,22 @@ const WORKS = [
     name: "太平簫(TAEPYEONGSO)TEK VIP",
     href: "https://soundcloud.com/cong_vu/taepyeonsotek-vip?si=dfd4ec8f5c60445385666e0ff01aa205&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
   },
+  // {
+  //   name: "太平簫(TAEPYEONGSO)TEK",
+  //   href: "https://soundcloud.com/cong_vu/cv-taepyongso-69?si=ab942bae161542588e431ab3b2619d70&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+  // },
   {
-    name: "太平簫(TAEPYEONGSO)TEK",
-    href: "https://soundcloud.com/cong_vu/cv-taepyongso-69?si=ab942bae161542588e431ab3b2619d70&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    name: "第3TEK",
+    href: "https://congvu.bandcamp.com/track/3tek",
   },
   {
     name: "160 YS",
     href: "https://jukeunderground.bandcamp.com/track/160-ys-cong-vu",
   },
-  {
-    name: "Vin Soni",
-    href: "https://jukeunderground.bandcamp.com/track/vin-soni-cong-vu",
-  },
-  {
-    name: "第3TEK",
-    href: "https://congvu.bandcamp.com/track/3tek"
-  },
+  // {
+  //   name: "Vin Soni",
+  //   href: "https://jukeunderground.bandcamp.com/track/vin-soni-cong-vu",
+  // },
   {
     name: "Midnite",
     href: "https://soundcloud.com/cong_vu/cong-vu-cong-vu-cdr-ii-07-midnite?si=0057765f713b482498c448eda278c45b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
@@ -113,11 +113,11 @@ const MIXES = [
 
 export default function Index() {
   return (
-    <div className="p-4 grid grid-cols-8 lg:grid-cols-24 row-auto col-auto h-dvh font-mono">
-      <h1 className="text-4xl col-start-1 mt-12 h-min col-span-full text-center">
+    <div className="p-4 grid grid-cols-8 lg:grid-cols-24 row-auto col-auto h-lvh font-mono break-keep">
+      <h1 className="text-4xl col-start-1 py-12 h-min col-span-full text-center">
         CONG VU
       </h1>
-      <section className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid mt-12">
+      <section className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid">
         <h2 className="col-span-full">Latest Mixes</h2>
         {MIXES.map((mix) => (
           <a
@@ -125,21 +125,21 @@ export default function Index() {
             key={mix.href}
             target="_blank"
             rel="noreferrer"
-            className="rounded-md text-center col-span-full border-[1px] hover:shadow-md transition-all py-4 border-gray-500 "
+            className="rounded-md text-center col-span-full border-[1px] hover:shadow-md transition-all py-4 px-8 border-gray-500 "
           >
             {mix.name}
           </a>
         ))}
       </section>
-      <section className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid">
-        <h2>Tracks</h2>
+      <section className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid pt-12">
+        <h2 className="col-span-full">Selected Tracks</h2>
         {WORKS.map((work) => (
           <a
             href={work.href}
             key={work.href}
             target="_blank"
             rel="noreferrer"
-            className="rounded-md text-center col-span-full border-[1px] hover:shadow-md transition-all py-4 border-gray-500 "
+            className="rounded-md text-center col-span-full border-[1px] hover:shadow-md transition-all py-4 px-8 border-gray-500 "
           >
             <button type="button" className="text-center col-span-full">
               {work.name}
@@ -147,24 +147,24 @@ export default function Index() {
           </a>
         ))}
       </section>
-      <section className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid">
-      <ul className="flex justify-center items-center text-2xl py-4 h-min gap-4 col-start-1 col-span-full">
-        {LINKS.map((link) => (
-          <li
-            key={link.name}
-            className="hover:scale-105 lowercase transition-all"
-          >
-            <a
-              href={link.href}
-              target="_blank"
-              rel="noreferrer"
-              className="h-5 w-5"
+      <section className="col-start-1 h-min grid gap-2 col-span-full grid-cols-subgrid py-12">
+        <ul className="flex justify-center items-center text-2xl py-4 h-min gap-4 col-start-1 col-span-full">
+          {LINKS.map((link) => (
+            <li
+              key={link.name}
+              className="hover:scale-105 lowercase transition-all"
             >
-              {link.icon}
-            </a>
-          </li>
-        ))}
-      </ul>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="h-5 w-5"
+              >
+                {link.icon}
+              </a>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );
